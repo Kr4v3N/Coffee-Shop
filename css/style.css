@@ -26,11 +26,15 @@ body {
 
 
 
+
+
 /* global styles */
 
 .bell-fonts {
     font-family: 'La Belle Aurore', cursive;
 }
+
+
 
 
 
@@ -57,6 +61,8 @@ body {
         background-repeat: no-repeat; */
     }
 }
+
+
 
 
 
@@ -109,6 +115,8 @@ body {
 
 
 
+
+
 /* video */
 
 .video_container {
@@ -128,6 +136,8 @@ body {
 
 
 
+
+
 /* nav Btn*/
 
 .navBtn {
@@ -135,12 +145,14 @@ body {
     top: 5%;
     right: 5%;
     font-size: 3.5rem;
-    color: var(--brightYellow);
+    color: var(--yellow);
     cursor: pointer;
     animation: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+
 
 
 /* nav animation */
@@ -155,4 +167,42 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+
+
+/* navbar */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16rem;
+    background: rgba(242, 180, 80, 0.8);
+    z-index: 3;
+}
+
+.nav_links {
+    list-style-type: none;
+}
+
+.nav_single-link {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--brown);
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav_single-link:hover {
+    background: var(--brown);
+    color: rgba(242, 180, 80, 0.9);
+    padding-left: 1.5rem;
+}
+
+.nav_logo:hover {
+    background: var(--grey);
 }
