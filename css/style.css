@@ -188,6 +188,20 @@ body {
     background: var(--grey);
 }
 
+/*   */
+.nav{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+.nav--show{
+    width: 16rem;
+}
+
+
+
+
+
 /* video switch */
 
 .video_switch-container {
