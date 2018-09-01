@@ -28,11 +28,15 @@ body {
 
 
 
+
+
 /* global styles */
 
 .bell-fonts {
     font-family: 'La Belle Aurore', cursive;
 }
+
+
 
 
 
@@ -61,6 +65,8 @@ body {
         background-repeat: no-repeat; */
     }
 }
+
+
 
 
 
@@ -117,6 +123,8 @@ body {
 
 
 
+
+
 /* video */
 
 .video_container {
@@ -133,6 +141,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+
 
 
 
@@ -155,6 +165,8 @@ body {
 
 
 
+
+
 /* nav animation */
 
 @keyframes pulse {
@@ -168,6 +180,8 @@ body {
         transform: scale(1);
     }
 }
+
+
 
 
 
@@ -205,4 +219,42 @@ body {
 
 .nav_logo:hover {
     background: var(--grey);
+}
+
+
+
+/* video switch */
+
+.video_switch-container {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .video_switch-container {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        z-index: 3;
+    }
+    .video_switch {
+        position: relative;
+        width: 5rem;
+        background: var(--yellow);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.35rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+    .video_switch-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--brown);
+        height: 100%;
+        width: 50%;
+        border-radius: 0.5rem;
+    }
 }
