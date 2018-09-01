@@ -22,28 +22,26 @@ body {
     color: var(--black);
 }
 
-
-
-
-
-
-
-
-
 /* global styles */
 
 .bell-fonts {
     font-family: 'La Belle Aurore', cursive;
 }
-
-
-
-
-
-
-
 /* end of global styles */
 
+/* preloader */
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--brightYellow);
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 /* header */
 
@@ -65,14 +63,6 @@ body {
         background-repeat: no-repeat; */
     }
 }
-
-
-
-
-
-
-
-
 
 /* banner  */
 
@@ -117,14 +107,6 @@ body {
     justify-content: center;
 }
 
-
-
-
-
-
-
-
-
 /* video */
 
 .video_container {
@@ -142,12 +124,6 @@ body {
     object-fit: cover;
 }
 
-
-
-
-
-
-
 /* nav Btn*/
 
 .navBtn {
@@ -162,11 +138,6 @@ body {
     animation-iteration-count: infinite;
 }
 
-
-
-
-
-
 /* nav animation */
 
 @keyframes pulse {
@@ -180,10 +151,6 @@ body {
         transform: scale(1);
     }
 }
-
-
-
-
 
 /* navbar */
 
@@ -220,8 +187,6 @@ body {
 .nav_logo:hover {
     background: var(--grey);
 }
-
-
 
 /* video switch */
 
