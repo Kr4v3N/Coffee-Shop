@@ -37,5 +37,5 @@ UI.prototype.videoControls = function() {
         btn.classList.remove('btnSlide')
         document.querySelector('.video_item').play()
     }
-
 }
+
