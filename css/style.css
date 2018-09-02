@@ -330,3 +330,88 @@ body {
         grid-template-rows: 1fr 1fr;
     }
 }
+
+/* drink section */
+
+.drink{
+    background: var(--brown);
+    color: var(--brightYellow);
+    text-transform: capitalize;
+}
+.drink-form, .drink-card{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    row-gap: 1.25rem;
+}
+.drink-form_feedback{
+    border: 0.1rem solid var(--brightYellow);
+    padding: 0.25rem;
+    display: none;
+}
+.error{
+    display: block;
+    color: red;
+    border-color: red;
+}
+.success{
+    display: block;
+    color: green;
+    border-color: green;
+}
+.drink-form_title, .drink-card_title{
+    font-size: 3rem;
+}
+.input-name, .input-lastname, .input-email{
+    width: 100%;
+}
+.input-name, .input-lastname, .input-email, .input-submit{
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(111,87,77,0.2);
+    color: var(--darkBrown);
+    border: none;
+    outline: none;
+}
+.input-name::placeholder, .input-lastname::placeholder, .input-email::placeholder{
+    color: var(--darkBrown);
+    text-transform: capitalize;
+}
+.input-submit{
+    background: var(--yellow);
+    color: var(--black);
+    transition: all 0.5s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.input-submit:hover{
+    opacity: 0.5;
+}
+.drink-card_list{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 2rem;
+}
+.person{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    border: 0.1rem solid rgba(111,87,77,0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+.person_thumbnail{
+    border-radius: 50%;
+}
+@media screen and (min-width: 768px){
+    .drink-card_list{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
