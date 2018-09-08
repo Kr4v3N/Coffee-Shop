@@ -34,7 +34,6 @@ function evenListeners() {
             ui.addCustomer(customer)
             ui.showFeedback('custumer added to the list', 'success')
             ui.clearFields()
-
         }
         else {
             ui.showFeedback('some form values empty', 'error')
@@ -123,7 +122,6 @@ UI.prototype.clearFields = function () {
   document.querySelector('.input-lastname').value = '';
   document.querySelector('.input-email').value = '';
 }
-
 
 // customer
 function Customer(name, lastname, email) {
